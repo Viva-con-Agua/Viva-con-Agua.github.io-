@@ -6,7 +6,7 @@ chokidar.watch('content').on('all', () => reloadRoutes())
 
 export default {
   getSiteData: () => ({
-    title: 'React Static',
+    title: 'Pool² Documentation',
   }),
   getRoutes: async () => {
     const { posts, home, about } = await jdown('content')
@@ -43,6 +43,6 @@ export default {
         is404: true,
         component: 'src/containers/404',
       },
-    ]
+    ] 
   },
 }
