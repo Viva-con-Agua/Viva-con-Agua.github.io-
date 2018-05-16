@@ -21,6 +21,10 @@
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
+    "gh-pages": "^1.1.0",
     "serve": "^6.1.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d dist"
   }
 }
