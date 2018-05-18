@@ -4,9 +4,6 @@ import chokidar from 'chokidar'
 
 chokidar.watch('content').on('all', () => reloadRoutes())
 
-var ghpages = require('gh-pages');
-ghpages.publish('dist', function(err) {});
-
 export default {
   getSiteData: () => ({
     title: 'Pool² Documentation',
