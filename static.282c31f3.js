@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -87,6 +87,12 @@ module.exports = require("react-static");
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+module.exports = require("htmr");
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -112,12 +118,6 @@ module.exports = function(module) {
 	return module;
 };
 
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = require("htmr");
 
 /***/ }),
 /* 4 */
@@ -234,7 +234,7 @@ var loadFromPromiseCache = exports.loadFromPromiseCache = function loadFromPromi
 var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, promisecache) {
   return promisecache[callForString(chunkName, props)] = pr;
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)(module)))
 
 /***/ }),
 /* 5 */
@@ -259,7 +259,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(1);
 
-var _htmr = __webpack_require__(3);
+var _htmr = __webpack_require__(2);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -299,7 +299,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(1);
 
-var _htmr = __webpack_require__(3);
+var _htmr = __webpack_require__(2);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -333,7 +333,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(1);
 
-var _htmr = __webpack_require__(3);
+var _htmr = __webpack_require__(2);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -342,23 +342,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 
 exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
-  var post = _ref.post;
+  var rest = _ref.rest;
   return _react2.default.createElement(
     'div',
     null,
-    _react2.default.createElement(
-      _reactStatic.Link,
-      { to: '/blog/' },
-      '<',
-      ' Back'
-    ),
-    _react2.default.createElement('br', null),
-    _react2.default.createElement(
-      'h3',
-      null,
-      post.title
-    ),
-    (0, _htmr2.default)(post.contents)
+    (0, _htmr2.default)(rest.contents)
   );
 });
 
@@ -379,33 +367,79 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(1);
 
+var _htmr = __webpack_require__(2);
+
+var _htmr2 = _interopRequireDefault(_htmr);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //
 
 exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
-  var posts = _ref.posts;
+  var concept = _ref.concept;
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      _reactStatic.Link,
+      { to: '/concepts/' },
+      '<',
+      ' Back'
+    ),
+    _react2.default.createElement('br', null),
+    _react2.default.createElement(
+      'h3',
+      null,
+      concept.title
+    ),
+    (0, _htmr2.default)(concept.contents)
+  );
+});
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactStatic = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+
+exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
+  var concepts = _ref.concepts;
   return _react2.default.createElement(
     'div',
     null,
     _react2.default.createElement(
       'h1',
       null,
-      'It\'s blog time.'
+      'Concepts'
     ),
     _react2.default.createElement('br', null),
-    'All Posts:',
+    'Implementing a microservice seems to be a fine solution to spread responsibility among several contributers. Nevertheless, there are some challenges to consider. The Pool\xB2 address such challenges by the following concepts. Each concept explains the addressed challenge and a possible solution.',
     _react2.default.createElement(
       'ul',
       null,
-      posts.map(function (post) {
+      concepts.map(function (concept) {
         return _react2.default.createElement(
           'li',
-          { key: post.slug },
+          { key: concept.slug },
           _react2.default.createElement(
             _reactStatic.Link,
-            { to: '/blog/post/' + post.slug + '/' },
-            post.title
+            { to: '/concepts/' + concept.slug + '/' },
+            concept.title
           )
         );
       })
@@ -414,7 +448,110 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
 });
 
 /***/ }),
-/* 10 */
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactStatic = __webpack_require__(1);
+
+var _htmr = __webpack_require__(2);
+
+var _htmr2 = _interopRequireDefault(_htmr);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+
+exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
+  var guide = _ref.guide;
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      _reactStatic.Link,
+      { to: '/guides/' },
+      '<',
+      ' Back'
+    ),
+    _react2.default.createElement('br', null),
+    _react2.default.createElement(
+      'h3',
+      null,
+      guide.title
+    ),
+    (0, _htmr2.default)(guide.contents)
+  );
+});
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactStatic = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+
+exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
+  var guides = _ref.guides;
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'h1',
+      null,
+      'Guides'
+    ),
+    _react2.default.createElement('br', null),
+    'Enabling you to add and edit microservices by yourself will be very simple, if you have examples. Thus, take a look at the following guides that describe implementations of the ',
+    _react2.default.createElement(
+      _reactStatic.Link,
+      { to: '/concepts', className: 'text' },
+      'Concepts'
+    ),
+    ':',
+    _react2.default.createElement(
+      'ul',
+      null,
+      guides.map(function (guide) {
+        return _react2.default.createElement(
+          'li',
+          { key: guide.slug },
+          _react2.default.createElement(
+            _reactStatic.Link,
+            { to: '/guides/' + guide.slug + '/' },
+            guide.title
+          )
+        );
+      })
+    )
+  );
+});
+
+/***/ }),
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -445,7 +582,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 11 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -459,11 +596,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(12);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(13);
+var _App = __webpack_require__(16);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -488,13 +625,13 @@ if (typeof document !== 'undefined') {
 }
 
 /***/ }),
-/* 12 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 13 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -510,13 +647,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(1);
 
-var _reactHotLoader = __webpack_require__(14);
+var _reactHotLoader = __webpack_require__(17);
 
-var _reactStaticRoutes = __webpack_require__(15);
+var _drop_small = __webpack_require__(18);
+
+var _drop_small2 = _interopRequireDefault(_drop_small);
+
+var _reactStaticRoutes = __webpack_require__(19);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
-__webpack_require__(24);
+__webpack_require__(28);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -533,18 +674,47 @@ var App = function App() {
         null,
         _react2.default.createElement(
           _reactStatic.Link,
-          { to: '/' },
-          'Home'
+          { to: '/', className: 'brand' },
+          _react2.default.createElement('img', { src: _drop_small2.default, alt: 'Viva con Agua logo' }),
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              'span',
+              { className: 'bold' },
+              'Pool\xB2'
+            ),
+            _react2.default.createElement(
+              'span',
+              null,
+              'Documentation'
+            )
+          )
         ),
         _react2.default.createElement(
           _reactStatic.Link,
-          { to: '/about' },
+          { to: '/concepts', className: 'text' },
+          'Concepts'
+        ),
+        _react2.default.createElement(
+          _reactStatic.Link,
+          { to: '/guides', className: 'text' },
+          'Guides'
+        ),
+        _react2.default.createElement(
+          _reactStatic.Link,
+          { to: '/rest', className: 'text' },
+          'REST Interfaces'
+        ),
+        _react2.default.createElement(
+          _reactStatic.Link,
+          { to: '/about', className: 'text' },
           'About'
         ),
         _react2.default.createElement(
-          _reactStatic.Link,
-          { to: '/blog' },
-          'Blog'
+          'span',
+          null,
+          'This documentation is still under construction...'
         )
       ),
       _react2.default.createElement(
@@ -557,16 +727,22 @@ var App = function App() {
 };
 
 exports.default = (0, _reactHotLoader.hot)(module)(App);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)(module)))
 
 /***/ }),
-/* 14 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 15 */
+/* 18 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -576,15 +752,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _path2 = __webpack_require__(16);
+var _path2 = __webpack_require__(20);
 
 var _path3 = _interopRequireDefault(_path2);
 
-var _importCss2 = __webpack_require__(17);
+var _importCss2 = __webpack_require__(21);
 
 var _importCss3 = _interopRequireDefault(_importCss2);
 
-var _universalImport2 = __webpack_require__(18);
+var _universalImport2 = __webpack_require__(22);
 
 var _universalImport3 = _interopRequireDefault(_universalImport2);
 
@@ -596,9 +772,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(19);
+var _reactRouterDom = __webpack_require__(23);
 
-var _reactUniversalComponent = __webpack_require__(20);
+var _reactUniversalComponent = __webpack_require__(24);
 
 var _reactUniversalComponent2 = _interopRequireDefault(_reactUniversalComponent);
 
@@ -630,7 +806,7 @@ var universalOptions = {
 
 var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Home',
-  file: '/home/johann/workspace/Viva-con-Agua.github.io/dist/react-static-routes.js',
+  file: '/home/johann/workspace/documentation/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 6)), (0, _importCss3.default)('src/containers/Home', {
       disableWarnings: true
@@ -650,7 +826,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/About',
-  file: '/home/johann/workspace/Viva-con-Agua.github.io/dist/react-static-routes.js',
+  file: '/home/johann/workspace/documentation/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 7)), (0, _importCss3.default)('src/containers/About', {
       disableWarnings: true
@@ -669,50 +845,110 @@ var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
   }
 }), universalOptions);
 var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
-  id: '../src/containers/Post',
-  file: '/home/johann/workspace/Viva-con-Agua.github.io/dist/react-static-routes.js',
+  id: '../src/containers/Rest',
+  file: '/home/johann/workspace/documentation/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 8)), (0, _importCss3.default)('src/containers/Post', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 8)), (0, _importCss3.default)('src/containers/Rest', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
     });
   },
   path: function path() {
-    return _path3.default.join(__dirname, '../src/containers/Post');
+    return _path3.default.join(__dirname, '../src/containers/Rest');
   },
   resolve: function resolve() {
     return /*require.resolve*/(8);
   },
   chunkName: function chunkName() {
-    return 'src/containers/Post';
+    return 'src/containers/Rest';
   }
 }), universalOptions);
 var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
-  id: '../src/containers/Blog',
-  file: '/home/johann/workspace/Viva-con-Agua.github.io/dist/react-static-routes.js',
+  id: '../src/containers/Concept',
+  file: '/home/johann/workspace/documentation/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 9)), (0, _importCss3.default)('src/containers/Blog', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 9)), (0, _importCss3.default)('src/containers/Concept', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
     });
   },
   path: function path() {
-    return _path3.default.join(__dirname, '../src/containers/Blog');
+    return _path3.default.join(__dirname, '../src/containers/Concept');
   },
   resolve: function resolve() {
     return /*require.resolve*/(9);
   },
   chunkName: function chunkName() {
-    return 'src/containers/Blog';
+    return 'src/containers/Concept';
   }
 }), universalOptions);
 var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
-  id: '../src/containers/404',
-  file: '/home/johann/workspace/Viva-con-Agua.github.io/dist/react-static-routes.js',
+  id: '../src/containers/Concepts',
+  file: '/home/johann/workspace/documentation/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 10)), (0, _importCss3.default)('src/containers/404', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 10)), (0, _importCss3.default)('src/containers/Concepts', {
+      disableWarnings: true
+    })]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return _path3.default.join(__dirname, '../src/containers/Concepts');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(10);
+  },
+  chunkName: function chunkName() {
+    return 'src/containers/Concepts';
+  }
+}), universalOptions);
+var t_5 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+  id: '../src/containers/Guide',
+  file: '/home/johann/workspace/documentation/dist/react-static-routes.js',
+  load: function load() {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 11)), (0, _importCss3.default)('src/containers/Guide', {
+      disableWarnings: true
+    })]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return _path3.default.join(__dirname, '../src/containers/Guide');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(11);
+  },
+  chunkName: function chunkName() {
+    return 'src/containers/Guide';
+  }
+}), universalOptions);
+var t_6 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+  id: '../src/containers/Guides',
+  file: '/home/johann/workspace/documentation/dist/react-static-routes.js',
+  load: function load() {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 12)), (0, _importCss3.default)('src/containers/Guides', {
+      disableWarnings: true
+    })]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return _path3.default.join(__dirname, '../src/containers/Guides');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(12);
+  },
+  chunkName: function chunkName() {
+    return 'src/containers/Guides';
+  }
+}), universalOptions);
+var t_7 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+  id: '../src/containers/404',
+  file: '/home/johann/workspace/documentation/dist/react-static-routes.js',
+  load: function load() {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 13)), (0, _importCss3.default)('src/containers/404', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -722,7 +958,7 @@ var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
     return _path3.default.join(__dirname, '../src/containers/404');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(10);
+    return /*require.resolve*/(13);
   },
   chunkName: function chunkName() {
     return 'src/containers/404';
@@ -730,11 +966,11 @@ var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 
 // Template Map
-global.componentsByTemplateID = global.componentsByTemplateID || [t_0, t_1, t_2, t_3, t_4];
+global.componentsByTemplateID = global.componentsByTemplateID || [t_0, t_1, t_2, t_3, t_4, t_5, t_6, t_7];
 
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
-  '404': 4
+  '404': 7
 
   // Get template for given path
 };var getComponentForPath = function getComponentForPath(path) {
@@ -809,31 +1045,31 @@ exports.default = Routes;
 /* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ }),
-/* 16 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("path");
 
 /***/ }),
-/* 17 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/importCss");
 
 /***/ }),
-/* 18 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
-/* 19 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
 
 /***/ }),
-/* 20 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -848,7 +1084,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _requireUniversalModule = __webpack_require__(21);
+var _requireUniversalModule = __webpack_require__(25);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -863,7 +1099,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(22);
+var _reportChunks = __webpack_require__(26);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -880,7 +1116,7 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(23);
+var _hoistNonReactStatics = __webpack_require__(27);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -1177,10 +1413,10 @@ function universal(component) {
   }, _temp;
 }
 exports.default = universal;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)(module)))
 
 /***/ }),
-/* 21 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1362,7 +1598,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 22 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1425,27 +1661,27 @@ ReportChunks.childContextTypes = {
 exports.default = ReportChunks;
 
 /***/ }),
-/* 23 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 24 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(29)(false);
 // imports
 
 
 // module
-exports.push([module.i, "body{font-family:HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;font-weight:300;font-size:16px;margin:0;padding:0}a{text-decoration:none;color:#108db8;font-weight:700}img{max-width:100%}nav{width:100%;background:#108db8}nav a{color:#fff;display:inline-block}.content,nav a{padding:1rem}", ""]);
+exports.push([module.i, "body{font-family:HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;font-weight:300;font-size:16px;margin:0;padding:0}a{text-decoration:none;color:#108db8;font-weight:700}img{max-width:100%}nav{padding:.5em 0;box-shadow:0 2px 4px 0 rgba(0,0,0,.2),0 3px 10px 0 rgba(0,0,0,.19);-moz-box-shadow:0 2px 4px 0 rgba(0,0,0,.2),0 3px 10px 0 rgba(0,0,0,.19);-webkit-box-shadow:0 2px 4px 0 rgba(0,0,0,.2),0 3px 10px 0 rgba(0,0,0,.19);display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;position:fixed;width:100%}nav,nav>span,nav a{background-color:#2196f3;border:0;text-transform:uppercase;font-weight:700}nav>span,nav a{display:inline-block;padding:0 1em;color:#fff;border-radius:5px;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;margin-right:.5em;line-height:50px}nav>span{font-size:.8em;color:#639}nav a.text:hover{color:#22262b;background-color:#e3f2fd;box-shadow:0 2px 4px 0 rgba(0,0,0,.2),0 3px 10px 0 rgba(0,0,0,.19);-moz-box-shadow:0 2px 4px 0 rgba(0,0,0,.2),0 3px 10px 0 rgba(0,0,0,.19);-webkit-box-shadow:0 2px 4px 0 rgba(0,0,0,.2),0 3px 10px 0 rgba(0,0,0,.19)}.content{padding:1em;width:50em;margin:0 auto;padding-top:66px}.content img{margin:0 auto;display:block}.brand{margin-left:-15px;color:#fff;line-height:20px;cursor:pointer;-ms-flex-direction:row;flex-direction:row;height:50px;padding:0 1.2em;font-size:18px}.brand,.brand div{display:-ms-flexbox;display:flex}.brand div{-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;margin-left:.4em}.brand .bold{font-size:1.6em}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 25 */
+/* 29 */
 /***/ (function(module, exports) {
 
 /*
@@ -1529,4 +1765,4 @@ function toComment(sourceMap) {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.3c8007f7.js.map
+//# sourceMappingURL=static.282c31f3.js.map
