@@ -27,7 +27,7 @@ url: "https://viva-con-agua.github.io" # the base hostname & protocol for your s
 github_username:  Viva-con-Agua
 
 # Build settings
-theme: just-the-docs
+remote-theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 
