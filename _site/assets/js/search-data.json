@@ -2,61 +2,73 @@
     "doc": "About",
     "title": "About",
     "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
-    "url": "https://viva-con-agua.github.io/about/",
+    "url": "http://localhost:4000/about/",
     "relUrl": "/about/"
   },"1": {
     "doc": "An example post",
     "title": "An example post",
     "content": "Example post body text. ",
-    "url": "https://viva-con-agua.github.io/outdated/content/collections/posts/an-example-post.html",
+    "url": "http://localhost:4000/outdated/content/collections/posts/an-example-post.html",
     "relUrl": "/outdated/content/collections/posts/an-example-post.html"
   },"2": {
     "doc": "Another post",
     "title": "Another post",
     "content": "Content… . ",
-    "url": "https://viva-con-agua.github.io/outdated/content/collections/posts/another-post.html",
+    "url": "http://localhost:4000/outdated/content/collections/posts/another-post.html",
     "relUrl": "/outdated/content/collections/posts/another-post.html"
   },"3": {
     "doc": "Guide - Edit the documentation",
     "title": "Guide: Edit the documentation",
     "content": "This page is hosted using GitHub Pages and you can pull the project as repository. The page is implemented using react-static using the markdown template. Thus we can use markdown to write the documentation and React to present it. ",
-    "url": "https://viva-con-agua.github.io/outdated/content/collections/posts/guide-edit-docu.html#guide-edit-the-documentation",
+    "url": "http://localhost:4000/outdated/content/collections/posts/guide-edit-docu.html#guide-edit-the-documentation",
     "relUrl": "/outdated/content/collections/posts/guide-edit-docu.html#guide-edit-the-documentation"
   },"4": {
     "doc": "Guide - Edit the documentation",
     "title": "Getting started",
     "content": "Pull the repository, add or edit a markdown file in content/collection/posts/. Commit and post your changes to the repository and your changes will be visible on https://viva-con-agua.github.io/. ",
-    "url": "https://viva-con-agua.github.io/outdated/content/collections/posts/guide-edit-docu.html#getting-started",
+    "url": "http://localhost:4000/outdated/content/collections/posts/guide-edit-docu.html#getting-started",
     "relUrl": "/outdated/content/collections/posts/guide-edit-docu.html#getting-started"
   },"5": {
     "doc": "Guide - Edit the documentation",
     "title": "Guide - Edit the documentation",
     "content": " ",
-    "url": "https://viva-con-agua.github.io/outdated/content/collections/posts/guide-edit-docu.html",
+    "url": "http://localhost:4000/outdated/content/collections/posts/guide-edit-docu.html",
     "relUrl": "/outdated/content/collections/posts/guide-edit-docu.html"
   },"6": {
+    "doc": "Test",
+    "title": "a test site",
+    "content": "He’d say, “I know what I want And I want it now I want you, ‘cause I’m Mr. Vain” I know what I want And I want it now I want you, ‘cause I’m Mr. Vain . ",
+    "url": "http://localhost:4000/testfile.html#a-test-site",
+    "relUrl": "/testfile.html#a-test-site"
+  },"7": {
+    "doc": "Test",
+    "title": "Test",
+    "content": " ",
+    "url": "http://localhost:4000/testfile.html",
+    "relUrl": "/testfile.html"
+  },"8": {
     "doc": "Pool² dev team",
     "title": "Pool² dev team",
     "content": "# Pool² dev team Still under construction... ",
-    "url": "https://viva-con-agua.github.io/outdated/content/about.html",
+    "url": "http://localhost:4000/outdated/content/about.html",
     "relUrl": "/outdated/content/about.html"
-  },"7": {
+  },"9": {
     "doc": "Pool² - Support volunteer collaboration",
     "title": "Pool² - Support volunteer collaboration",
     "content": "# Pool² - Support volunteer collaboration Pool² is the second version of the system introduced by [Viva con Agua](https://www.vivaconagua.org/home) supporting the volunteers during their daily work. This tool is explicitly developed to support a socio-technical self-development. This documentation is still under construction... ",
-    "url": "https://viva-con-agua.github.io/outdated/content/home/intro.html",
+    "url": "http://localhost:4000/outdated/content/home/intro.html",
     "relUrl": "/outdated/content/home/intro.html"
-  },"8": {
+  },"10": {
     "doc": "Jdown",
     "title": "Jdown",
     "content": "## Jdown Convert a directory of markdown files to structured and usable JSON - [Github](https://github.com/DanWebb/jdown) ![jdown](/jdown-logo.png \"Jdown logo\") ",
-    "url": "https://viva-con-agua.github.io/outdated/content/home/jdown.html",
+    "url": "http://localhost:4000/outdated/content/home/jdown.html",
     "relUrl": "/outdated/content/home/jdown.html"
-  },"9": {
+  },"11": {
     "doc": "React Static",
     "title": "React Static",
     "content": "## React Static A **progressive static-site generator** for React. - [Github](https://github.com/nozzle/react-static) ![React Static](/logo.png \"React static logo\") ",
-    "url": "https://viva-con-agua.github.io/outdated/content/home/react-static.html",
+    "url": "http://localhost:4000/outdated/content/home/react-static.html",
     "relUrl": "/outdated/content/home/react-static.html"
   }
 }
