@@ -1,10 +1,12 @@
 ---
-title: Test
+layout: default
+title: Base
+nav_order: 2
 has_children: true
-nav_order: 1
+permalink: docs/base
 ---
 
-# a test site
+# Base Components
 
 He'd say, "I know what I want
 And I want it now

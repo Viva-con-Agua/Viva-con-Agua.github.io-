@@ -1,74 +1,122 @@
 {"0": {
+    "doc": "Guides",
+    "title": "Guides",
+    "content": " ",
+    "url": "http://localhost:4000/docs/guides/Guide.html",
+    "relUrl": "/docs/guides/Guide.html"
+  },"1": {
+    "doc": "Guides",
+    "title": "Edit the documentation",
+    "content": "This page is hosted using GitHub Pages and you can pull the project as repository. The page is implemented using react-static using the markdown template. Thus we can use markdown to write the documentation and React to present it. Getting started . Pull the repository, add or edit a markdown file in docs/. Commit and post your changes to the repository and your changes will be visible on https://viva-con-agua.github.io/. ",
+    "url": "http://localhost:4000/docs/guides/Guide.html#edit-the-documentation",
+    "relUrl": "/docs/guides/Guide.html#edit-the-documentation"
+  },"2": {
     "doc": "About",
     "title": "About",
     "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll . ",
     "url": "http://localhost:4000/about/",
     "relUrl": "/about/"
-  },"1": {
-    "doc": "An example post",
-    "title": "An example post",
-    "content": "Example post body text. ",
-    "url": "http://localhost:4000/outdated/content/collections/posts/an-example-post.html",
-    "relUrl": "/outdated/content/collections/posts/an-example-post.html"
-  },"2": {
-    "doc": "Another post",
-    "title": "Another post",
-    "content": "Content… . ",
-    "url": "http://localhost:4000/outdated/content/collections/posts/another-post.html",
-    "relUrl": "/outdated/content/collections/posts/another-post.html"
   },"3": {
-    "doc": "Guide - Edit the documentation",
-    "title": "Guide: Edit the documentation",
-    "content": "This page is hosted using GitHub Pages and you can pull the project as repository. The page is implemented using react-static using the markdown template. Thus we can use markdown to write the documentation and React to present it. ",
-    "url": "http://localhost:4000/outdated/content/collections/posts/guide-edit-docu.html#guide-edit-the-documentation",
-    "relUrl": "/outdated/content/collections/posts/guide-edit-docu.html#guide-edit-the-documentation"
-  },"4": {
-    "doc": "Guide - Edit the documentation",
-    "title": "Getting started",
-    "content": "Pull the repository, add or edit a markdown file in content/collection/posts/. Commit and post your changes to the repository and your changes will be visible on https://viva-con-agua.github.io/. ",
-    "url": "http://localhost:4000/outdated/content/collections/posts/guide-edit-docu.html#getting-started",
-    "relUrl": "/outdated/content/collections/posts/guide-edit-docu.html#getting-started"
-  },"5": {
-    "doc": "Guide - Edit the documentation",
-    "title": "Guide - Edit the documentation",
-    "content": " ",
-    "url": "http://localhost:4000/outdated/content/collections/posts/guide-edit-docu.html",
-    "relUrl": "/outdated/content/collections/posts/guide-edit-docu.html"
-  },"6": {
-    "doc": "Test",
-    "title": "a test site",
+    "doc": "Base",
+    "title": "Base Components",
     "content": "He’d say, “I know what I want And I want it now I want you, ‘cause I’m Mr. Vain” I know what I want And I want it now I want you, ‘cause I’m Mr. Vain . ",
-    "url": "http://localhost:4000/testfile.html#a-test-site",
-    "relUrl": "/testfile.html#a-test-site"
-  },"7": {
-    "doc": "Test",
-    "title": "Test",
+    "url": "http://localhost:4000/docs/base#base-components",
+    "relUrl": "/docs/base#base-components"
+  },"4": {
+    "doc": "Base",
+    "title": "Base",
     "content": " ",
-    "url": "http://localhost:4000/testfile.html",
-    "relUrl": "/testfile.html"
+    "url": "http://localhost:4000/docs/base",
+    "relUrl": "/docs/base"
+  },"5": {
+    "doc": "Buttons",
+    "title": "Buttons",
+    "content": " ",
+    "url": "http://localhost:4000/docs/base/buttons.html",
+    "relUrl": "/docs/base/buttons.html"
+  },"6": {
+    "doc": "Form",
+    "title": "Form Components",
+    "content": "Root Element for a Form . &lt;vca-form&gt; content &lt;/vca-form&gt; . Define a field Element . &lt;vca-field label=\"Label\"&gt; content &lt;/vca-field&gt; . Content will display in a row . &lt;vca-field-row&gt; content &lt;/vca-field-row&gt; . ",
+    "url": "http://localhost:4000/docs/forms#form-components",
+    "relUrl": "/docs/forms#form-components"
+  },"7": {
+    "doc": "Form",
+    "title": "Form",
+    "content": " ",
+    "url": "http://localhost:4000/docs/forms",
+    "relUrl": "/docs/forms"
   },"8": {
-    "doc": "Pool² dev team",
-    "title": "Pool² dev team",
-    "content": "# Pool² dev team Still under construction... ",
-    "url": "http://localhost:4000/outdated/content/about.html",
-    "relUrl": "/outdated/content/about.html"
+    "doc": "Overview",
+    "title": ":droplet: Welcome to the Front-End library for Viva con Agua IT projects :sweat_drops:",
+    "content": " ",
+    "url": "http://localhost:4000/#droplet-welcome-to-the-front-end-library-for-viva-con-agua-it-projects-sweat_drops",
+    "relUrl": "/#droplet-welcome-to-the-front-end-library-for-viva-con-agua-it-projects-sweat_drops"
   },"9": {
-    "doc": "Pool² - Support volunteer collaboration",
-    "title": "Pool² - Support volunteer collaboration",
-    "content": "# Pool² - Support volunteer collaboration Pool² is the second version of the system introduced by [Viva con Agua](https://www.vivaconagua.org/home) supporting the volunteers during their daily work. This tool is explicitly developed to support a socio-technical self-development. This documentation is still under construction... ",
-    "url": "http://localhost:4000/outdated/content/home/intro.html",
-    "relUrl": "/outdated/content/home/intro.html"
+    "doc": "Overview",
+    "title": "Introduction",
+    "content": "#VCA-UI is a front-end library for developing Viva con Agua IT web-interfaces based on Vue.JS . ",
+    "url": "http://localhost:4000/#introduction",
+    "relUrl": "/#introduction"
   },"10": {
-    "doc": "Jdown",
-    "title": "Jdown",
-    "content": "## Jdown Convert a directory of markdown files to structured and usable JSON - [Github](https://github.com/DanWebb/jdown) ![jdown](/jdown-logo.png \"Jdown logo\") ",
-    "url": "http://localhost:4000/outdated/content/home/jdown.html",
-    "relUrl": "/outdated/content/home/jdown.html"
+    "doc": "Overview",
+    "title": "Features",
+    "content": ". | Based on #Vue | A NPM Workflow * | . ",
+    "url": "http://localhost:4000/#features",
+    "relUrl": "/#features"
   },"11": {
-    "doc": "React Static",
-    "title": "React Static",
-    "content": "## React Static A **progressive static-site generator** for React. - [Github](https://github.com/nozzle/react-static) ![React Static](/logo.png \"React static logo\") ",
-    "url": "http://localhost:4000/outdated/content/home/react-static.html",
-    "relUrl": "/outdated/content/home/react-static.html"
+    "doc": "Overview",
+    "title": "Environment Support",
+    "content": ". | Supports Modern Browsers and Safari | . ",
+    "url": "http://localhost:4000/#environment-support",
+    "relUrl": "/#environment-support"
+  },"12": {
+    "doc": "Overview",
+    "title": "Version",
+    "content": "#VCA-UI: . ",
+    "url": "http://localhost:4000/#version",
+    "relUrl": "/#version"
+  },"13": {
+    "doc": "Overview",
+    "title": "Overview",
+    "content": " ",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },"14": {
+    "doc": "Input",
+    "title": "Input Fields",
+    "content": "Input . &lt;vca-input errorMsg=\"error\" v-model=\"value\" :rules=\"$v.value\"&gt; content &lt;/vca-input&gt; . Money Input . &lt;vca-money-input v-model=\"money\" :amount=\"money\" :rules=\"$v.value\" select/&gt; . Edit money datatype. With select the input provide a dropsdown for currency selection. Default the currency will display as label. Money: . money: { amount: 0, //int in cents currency: \"EUR\" //currenry tag } . List of Currency. Use select option for selectable list: . currencies: [ { label: '€', value: 'EUR' } ] . ",
+    "url": "http://localhost:4000/docs/input#input-fields",
+    "relUrl": "/docs/input#input-fields"
+  },"15": {
+    "doc": "Input",
+    "title": "Input",
+    "content": " ",
+    "url": "http://localhost:4000/docs/input",
+    "relUrl": "/docs/input"
+  },"16": {
+    "doc": "Layout",
+    "title": "Layout",
+    "content": " ",
+    "url": "http://localhost:4000/docs/base/layout.html",
+    "relUrl": "/docs/base/layout.html"
+  },"17": {
+    "doc": "Base",
+    "title": "Navigation Components",
+    "content": " ",
+    "url": "http://localhost:4000/docs/navigation#navigation-components",
+    "relUrl": "/docs/navigation#navigation-components"
+  },"18": {
+    "doc": "Base",
+    "title": "Base",
+    "content": " ",
+    "url": "http://localhost:4000/docs/navigation",
+    "relUrl": "/docs/navigation"
+  },"19": {
+    "doc": "Base",
+    "title": "Base",
+    "content": "Tabs . &lt;vca-tabs&gt; &lt;vca-tab&gt; content &lt;/vca-tab&gt; &lt;/vca-tabs&gt; . ",
+    "url": "http://localhost:4000/docs/tabs",
+    "relUrl": "/docs/tabs"
   }
 }
