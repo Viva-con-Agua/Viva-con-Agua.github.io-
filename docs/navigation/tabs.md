@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Base
-has_children: false
+title: Tabs
+parent: Navigation
 permalink: docs/tabs
 ---
 

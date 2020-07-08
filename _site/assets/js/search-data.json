@@ -19,7 +19,7 @@
   },"3": {
     "doc": "Base",
     "title": "Base Components",
-    "content": "He’d say, “I know what I want And I want it now I want you, ‘cause I’m Mr. Vain” I know what I want And I want it now I want you, ‘cause I’m Mr. Vain . ",
+    "content": " ",
     "url": "http://localhost:4000/docs/base#base-components",
     "relUrl": "/docs/base#base-components"
   },"4": {
@@ -86,14 +86,14 @@
     "doc": "Input",
     "title": "Input Fields",
     "content": "Input . &lt;vca-input errorMsg=\"error\" v-model=\"value\" :rules=\"$v.value\"&gt; content &lt;/vca-input&gt; . Money Input . &lt;vca-money-input v-model=\"money\" :amount=\"money\" :rules=\"$v.value\" select/&gt; . Edit money datatype. With select the input provide a dropsdown for currency selection. Default the currency will display as label. Money: . money: { amount: 0, //int in cents currency: \"EUR\" //currenry tag } . List of Currency. Use select option for selectable list: . currencies: [ { label: '€', value: 'EUR' } ] . ",
-    "url": "http://localhost:4000/docs/input#input-fields",
-    "relUrl": "/docs/input#input-fields"
+    "url": "http://localhost:4000/docs/forms/input.html#input-fields",
+    "relUrl": "/docs/forms/input.html#input-fields"
   },"15": {
     "doc": "Input",
     "title": "Input",
     "content": " ",
-    "url": "http://localhost:4000/docs/input",
-    "relUrl": "/docs/input"
+    "url": "http://localhost:4000/docs/forms/input.html",
+    "relUrl": "/docs/forms/input.html"
   },"16": {
     "doc": "Layout",
     "title": "Layout",
@@ -101,20 +101,20 @@
     "url": "http://localhost:4000/docs/base/layout.html",
     "relUrl": "/docs/base/layout.html"
   },"17": {
-    "doc": "Base",
+    "doc": "Navigation",
     "title": "Navigation Components",
     "content": " ",
     "url": "http://localhost:4000/docs/navigation#navigation-components",
     "relUrl": "/docs/navigation#navigation-components"
   },"18": {
-    "doc": "Base",
-    "title": "Base",
+    "doc": "Navigation",
+    "title": "Navigation",
     "content": " ",
     "url": "http://localhost:4000/docs/navigation",
     "relUrl": "/docs/navigation"
   },"19": {
-    "doc": "Base",
-    "title": "Base",
+    "doc": "Tabs",
+    "title": "Tabs",
     "content": "Tabs . &lt;vca-tabs&gt; &lt;vca-tab&gt; content &lt;/vca-tab&gt; &lt;/vca-tabs&gt; . ",
     "url": "http://localhost:4000/docs/tabs",
     "relUrl": "/docs/tabs"

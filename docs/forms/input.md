@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Input
-permalink: /docs/input
+parent: Form
 has_children: false
 ---
 
@@ -23,7 +23,7 @@ has_children: false
 ```
 Edit money datatype. With select the input provide a dropsdown for currency selection. Default the currency will display as label.
 
-Money:
+#### Money:
  ```
  money: {
      amount: 0, //int in cents
